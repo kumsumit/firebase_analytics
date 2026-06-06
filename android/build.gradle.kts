@@ -32,13 +32,6 @@ repositories {
     mavenCentral()
 }
 
-rootProject.allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
 val firebaseCoreProject =
     findProject(":firebase_core")
         ?: throw GradleException(
