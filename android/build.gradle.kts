@@ -1,3 +1,4 @@
+import com.android.build.api.dsl.LibraryExtension
 import com.android.Version
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -10,9 +11,9 @@ plugins {
 
 apply(from = "local-config.gradle.kts")
 
-val compileSdkVersion = extra["compileSdk"] as Int
-val minSdkVersion = extra["minSdk"] as Int
-val javaVersion = extra["javaVersion"] as JavaVersion
+val compileSdkValue = extra["compileSdk"] as Int
+val minSdkValue = extra["minSdk"] as Int
+val javaVersion: JavaVersion by extra
 
 val agpMajor =
     Version.ANDROID_GRADLE_PLUGIN_VERSION.substringBefore('.').toInt()
@@ -39,7 +40,7 @@ val firebaseCoreProject =
                 "have you added it as a dependency in your pubspec?"
         )
 
-if (!firebaseCoreProject.properties.containsKey("FirebaseSDKVersion")) {
+if (firebaseCoreProject.findProperty("FirebaseSDKVersion") == null) {
     throw GradleException(
         "A newer version of the firebase_core FlutterFire plugin is required, " +
             "please update your firebase_core pubspec dependency."
@@ -55,19 +56,19 @@ fun getRootProjectExtOrCoreProperty(
         ?.get("FlutterFire") as? Map<*, *>
 
     return flutterFire?.get(name)
-        ?: firebaseCoreProject.properties[name]
+        ?: firebaseCoreProject.findProperty(name)
         ?: throw GradleException("Property '$name' not found.")
 }
 
-android {
+extensions.configure<LibraryExtension>("android") {
     namespace = "io.flutter.plugins.firebase.analytics"
 
     compileSdk =
-        compileSdkVersion
+        compileSdkValue
 
     defaultConfig {
         minSdk =
-            minSdkVersion
+            minSdkValue
 
         testInstrumentationRunner =
             "androidx.test.runner.AndroidJUnitRunner"
@@ -79,16 +80,6 @@ android {
 
         targetCompatibility =
             javaVersion
-    }
-
-    sourceSets {
-        getByName("main") {
-            java.srcDir("src/main/kotlin")
-        }
-
-        getByName("test") {
-            java.srcDir("src/test/kotlin")
-        }
     }
 
     buildFeatures {
