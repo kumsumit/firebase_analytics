@@ -45,13 +45,13 @@
     },
     {
       "name": "firebase_analytics_platform_interface",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_analytics_platform_interface-56bcbd7d5687ec951a4c136c82d8e11155125172/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_analytics_platform_interface-c87e7cee2d7829d66a8fc35cb49c059923ae38f9/",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
     {
       "name": "firebase_analytics_web",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_analytics_web-02d76125a06efbe418c7659b098d5df1b79ee561/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_analytics_web-8ccf8fb8357b8cb543669518807d6f4dc34716e4/",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
