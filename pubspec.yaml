@@ -20,10 +20,14 @@ environment:
   flutter: '>=3.44.0'
 
 dependencies:
-  firebase_analytics_platform_interface: ^6.0.2
-  firebase_analytics_web: ^0.6.1+8
-  firebase_core: ^4.10.0
-  firebase_core_platform_interface: ^7.0.1
+  firebase_analytics_platform_interface:
+    git: https://github.com/kumsumit/firebase_analytics_platform_interface.git
+  firebase_analytics_web:
+    git: https://github.com/kumsumit/firebase_analytics_web.git
+  firebase_core:
+    git: https://github.com/kumsumit/firebase_core.git
+  firebase_core_platform_interface: 
+    git: https://github.com/kumsumit/firebase_core_platform_interface.git
   flutter:
     sdk: flutter
 
