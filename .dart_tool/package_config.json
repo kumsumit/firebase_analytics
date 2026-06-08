@@ -2,12 +2,6 @@
   "configVersion": 2,
   "packages": [
     {
-      "name": "_flutterfire_internals",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/_flutterfire_internals-12b367dafb5e3df30db53a0f7873817a653d6e79/",
-      "packageUri": "lib/",
-      "languageVersion": "3.12"
-    },
-    {
       "name": "async",
       "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/async-2.13.1",
       "packageUri": "lib/",
@@ -45,31 +39,31 @@
     },
     {
       "name": "firebase_analytics_platform_interface",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_analytics_platform_interface-c87e7cee2d7829d66a8fc35cb49c059923ae38f9/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_analytics_platform_interface-a98be8ebee47de68b5998f2ea4bec2f3f3785af4/",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
     {
       "name": "firebase_analytics_web",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_analytics_web-8ccf8fb8357b8cb543669518807d6f4dc34716e4/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_analytics_web-76b215d9ba7fc012b53e8cf8eda969eae5404dc7/",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_core-c2c52b176464f36ba86126c6c3eddf51a4a51942/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_core-aea716365ab9d8773614af14fc9a25faef652e4f/",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
     {
       "name": "firebase_core_platform_interface",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_core_platform_interface-51a085b039b042fdd101779e759a192ab8088d7e/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_core_platform_interface-df6c156996ee80474d4fc40a236c31f1df79db0b/",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
     {
       "name": "firebase_core_web",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_core_web-784cc2fa5949c682c279d2c6b8e2dd684c1e5207/",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/firebase_core_web-be3b01f71dcb1e020794382a112cad10f991c970/",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
@@ -88,6 +82,12 @@
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/amitsharan/development/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.12"
+    },
+    {
+      "name": "flutterfire_internals",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/git/flutterfire_internals-a524e2131b0e4cb76665e3ec74483b7ef933a4a3/",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
